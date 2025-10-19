@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar", dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mortagage calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar" id="navbar" style="background: var(--navy);">
+			<img src="images/new_logo_transparent.png" class="logo">
+            <a class="name" href="index.html">إسكان الرؤية البيضاء</a>
+			<ul>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="index.html #services">الخدمات</a></li>
+                <li><a href="properties.html">العقارات</a></li>
+                <li><a href="calculator.html">حاسبة التمويل</a></li>
+			</ul>
+		</nav>		
+    </header>
+    <section class="calculator-section" id="calculator">
+        <div class="calculator-container">
+            <div class="calculator-header">
+                <h2>حاسبة التمويل الذكية</h2>
+                <p>احسب قسطك الشهري بدقة وسهولة</p>
+            </div>
+
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label>
+                        <span>سعر العقار</span>
+                        <span class="value-display" id="priceDisplay">1,000,000 ريال</span>
+                    </label>
+                    <input type="range" id="propertyPrice" min="300000" max="5000000" step="50000" value="1000000">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <span>الدفعة الأولى (%)</span>
+                        <span class="value-display" id="downPaymentDisplay">20%</span>
+                    </label>
+                    <input type="range" id="downPayment" min="10" max="50" step="5" value="20">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <span>مدة التمويل (سنوات)</span>
+                        <span class="value-display" id="periodDisplay">20 سنة</span>
+                    </label>
+                    <input type="range" id="financingPeriod" min="5" max="30" step="5" value="20">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <span>نسبة الربح السنوية (%)</span>
+                        <span class="value-display" id="rateDisplay">4.5%</span>
+                    </label>
+                    <input type="range" id="profitRate" min="3" max="8" step="0.25" value="4.5">
+                </div>
+            </div>
+
+            <div class="calculator-result">
+                <div class="result-label">القسط الشهري المتوقع</div>
+                <div class="result-value" id="monthlyPayment">5,063 ريال</div>
+                <div class="result-subtext">تقدير تقريبي - قد تختلف الأرقام الفعلية</div>
+
+                <div class="result-details">
+                    <div class="result-detail">
+                        <div class="result-detail-label">مبلغ التمويل</div>
+                        <div class="result-detail-value" id="financingAmount">800,000</div>
+                    </div>
+                    <div class="result-detail">
+                        <div class="result-detail-label">إجمالي المبلغ</div>
+                        <div class="result-detail-value" id="totalAmount">1,215,120</div>
+                    </div>
+                    <div class="result-detail">
+                        <div class="result-detail-label">إجمالي الربح</div>
+                        <div class="result-detail-value" id="totalProfit">415,120</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p>نحن هنا لنحول رؤيتك إلى واقع. فريقنا جاهز لخدمتك.</p>
+            <div class="contact-info">
+                <a href="mailto:info@iskanwvr.com">info@iskanwvr.com</a>
+                <span>&bull;</span>
+                <a href="tel:+966000000000">+966 00 000 0000</a>
+                <span>&bull;</span>
+                <a href="#">جدة، المملكة العربية السعودية</a>
+            </div>
+            <div class="wrapper">
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61582491991101"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.snapchat.com/@erbjeddah"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/fr/7/75/Snapchat.png?20230424210458">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/erbjeddah/"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://x.com/ERBjeddah"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/eskan-al-roaya-al-bayda"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1200px-LinkedIn_icon.svg.png">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@erbjeddah"></a>
+                    <img class="icon-size" src="https://st3.depositphotos.com/6736296/33335/v/450/depositphotos_333352716-stock-illustration-tik-tok-logo-editorial-vector.jpg">
+                </div>
+                <div class="icon github">
+                    <a class="link-size" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@ERBjeddah"></a>
+                    <img class="icon-size" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/YouTube_social_red_circle_%282024%29.svg">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 شركة إسكان الرؤيا البيضاء العقارية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="whatsapp" id="chatbotToggle">
+        <a class="whatsapp" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=966552299994"></a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+    </div>
+    <script src="js/calcLogic.js"></script>
+</body>
+</html>
