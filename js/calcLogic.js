@@ -18,11 +18,10 @@ const propertyPrice = document.getElementById('propertyPrice');
             // Calculate financing
             const downPaymentAmount = price * (downPct / 100);
             const financingAmt = price - downPaymentAmount;
-            const monthlyRate = rate / 12 / 100;
+            const mutliplier = ((rate * years) / 100) + 1;
             const numberOfPayments = years * 12;
             
-            const monthlyPmt = (financingAmt * monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / 
-                              (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+            const monthlyPmt = (financingAmt / numberOfPayments) * mutliplier;
             
             const totalAmt = monthlyPmt * numberOfPayments;
             const totalPft = totalAmt - financingAmt;
