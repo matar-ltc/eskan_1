@@ -232,7 +232,11 @@ nav ul li a{
   bottom: 0;
   z-index: -1;
   max-width: 100%;
+  width: auto;
   height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .gradient{
@@ -255,7 +259,7 @@ nav ul li a{
 }
 
 @media (max-aspect-ratio: 16/9){
-  .back-video{
+  .bg-video{
   width: auto;
   height: 100%;
   object-fit: cover;
@@ -987,10 +991,10 @@ nav ul li a{
 }
 
 @media screen and (max-width: 600px) {
-  .bg-video{
-    aspect-ratio: 9 / 16;
+  /* .bg-video{
+    aspect-ratio: 6 / 16;
     object-fit: cover;
-  }
+  } */
   .gradient{
     aspect-ratio: 9 / 16;
     object-fit: cover;
@@ -1040,9 +1044,18 @@ nav ul li a{
   font-size: 4vw;
   }
 
-  h4{
+  /* h4{
 
   font-size: 3vw;
+  } */
+
+  .service-card{
+    padding: 2rem;
+  }
+
+  .service-card h4{
+    font-size: 4vw;
+    bottom: 11px;
   }
 
 
@@ -1054,19 +1067,29 @@ nav ul li a{
 
 
 @media screen and (min-width:600px){
-
+  .navbar{
+    visibility: hidden;
+  }
+  .topnav{
+    visibility: visible;
+  }
 }
 
 @media screen and (min-width:992px){
   .topnav{
     visibility: hidden;
   }
-  
+  .navbar{
+    visibility: visible;
+  }
   .navbar .name{
 
     margin-left: 40rem;
   }
-
+   /* .bg-video{
+    aspect-ratio: 20 / 16;
+    object-fit: cover;
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
