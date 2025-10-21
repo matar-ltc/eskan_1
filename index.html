@@ -41,14 +41,26 @@
 	<header>
 		<nav class="navbar" id="navbar">
             <img src="images/new_logo_transparent.png" class="logo">
-            <a class="name" href="index.html">إسكان الرؤية البيضاء</a>
+            <a class="name" href="index.html">إسكان الرؤيا البيضاء</a>
 			<ul>
                 <li><a href="about.html">من نحن</a></li>
                 <li><a href="index.html #services">الخدمات</a></li>
                 <li><a href="properties.html">العقارات</a></li>
                 <li><a href="calculator.html">حاسبة التمويل</a></li>
 			</ul>
-		</nav>		
+		</nav>
+        <div class="topnav" id="topnav">
+            <img src="images/new_logo_transparent.png" class="logo">
+            <a class="name" href="index.html">إسكان الرؤيا البيضاء</a>
+            <!-- Navigation links (hidden by default) -->
+            <button onclick="myFunction()" class="dropbtn">☰</button>
+                <div id="myDropdown" class="dropdown-content right-dropdown">
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="index.html #services">الخدمات</a></li>
+                    <li><a href="properties.html">العقارات</a></li>
+                    <li><a href="calculator.html">حاسبة التمويل</a></li>
+                </div>
+        </div>				
     </header>
 	<div class="hero">
 		<video autoplay loop muted plays-inline class="bg-video">
@@ -170,5 +182,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/calcLogic.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
